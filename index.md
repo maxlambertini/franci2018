@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Benvenuti!
+main_title: Benvenuti!
 ---
 
 su questa pagina Internet. Sicuramente non è facile pensare di poter contattare uno Psicologo tramite un pc, decidere se telefonare per chiedere un primo colloquio oppure no, difficile spesso anche solo pensare, per alcuni di noi, di poter davvero chiedere un aiuto. Ogni terapeuta con alle spalle una formazione ad orientamento psicodinamico è stato, a sua volta, paziente,  ha percorso il tragitto che l’ha portato a scegliere “il proprio” terapeuta, ed ha intrapreso il viaggio di psicoterapia personale che è necessario fare, secondo questo orientamento psicologico, per poi poter accompagnare altri in un percorso di cura. Per questo sa quanto possa essere difficile proprio l’inizio del viaggio, il decidere se intraprenderlo o meno, e soprattutto decidere chi sarà accanto a noi. Un po’ come Dante con Virgilio, che assieme hanno attraversato  gli Inferi, per poi arrivare al Purgatorio e al Paradiso, due compagni di viaggio che con umiltà e impegno affronteranno cammini impervi prima di poter godere la vista di una sospirata e meritata alba e potersi, infine,  salutare. 
