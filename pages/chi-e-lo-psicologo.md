@@ -1,9 +1,10 @@
 ---
 layout: page
-title: Chi è lo Psicologo
+title: Chi è lo Psicologo ?
 permalink: /chi-e-lo-psicologo/
-quadro: "Gino Covili  Il Seminatore (1998)"
 order: 2
+quadro: Gino Covili - Il Seminatore (1998)
+image: /pics/chi-e-lo.psicologo.jpg
 ---
 
 Psichiatra, Neurologo, Psicologo, Psicoterapeuta, Specialista in Malattie Mentali, ecc.. discriminare fra le varie professionalità non è semplice. 

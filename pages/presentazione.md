@@ -5,9 +5,13 @@ permalink: /presentazione/
 order: 1
 ---
 
+<figure class="presentazione">
+    <img id="img-francesca-de-lucca" src="/pics/presentazione.jpg" alt="Dottoressa Francesca De Lucca" />
+</figure>
+
 La **Dottoressa  Francesca De Lucca** si laurea in **Psicologia Clinica e di Comunità** nel 1999  presso la Facoltà di Psicologia dell’Università di Bologna .
 E’ iscritta **dall’anno 2003** all’ Albo dell’ Ordine degli Psicologi dell’ Emilia Romagna, e dal 2007 è iscritta nella sezione degli  Psicoterapeuti **(sezione A, numero 3249)**, in seguito alla specializzazione in Psicoterapia ad orientamento Psicoanalitico conseguita presso l'Istituto di Analisi Immaginativa di Cremona. 
-
+ 
 Si è formata presso:
 
 * l’ Istituto Penale Minorile “Siciliani” di Bologna;

@@ -1,4 +1,12 @@
-<header id="header" class="post-header">
+{% if page.hero_title %}
+<header id="hero" class="post-header {{ page.headerclass }}">
+        <h1 class="hero-title">{{ page.hero_title | escape }}</h1>
+        {% if page.hero_row %}
+        <h2 class="hero-row">{{ page.hero_row }}</h2>
+        {% endif %}
+</header>
+{% else %}    
+<header id="header" class="post-header {{ page.headerclass }}">
     {% if page.title %}
     <h1 class="post-title">{{ page.title | escape }}</h1>
     {% endif %}
@@ -6,4 +14,4 @@
     <h1 class="post-title">{{ page.main_title | escape }}</h1>
     {% endif %}
 </header>
-    
+{% endif %}

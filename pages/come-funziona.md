@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Come funziona la psicoterapia
+title: Come funziona la Psicoterapia
 permalink: /come-funziona/
+image: /pics/come-funziona-la-psicoterapia.jpg
 quadro: "Gino Covili  “Il paese dorme e sogna” (1997)"
 order: 3
 ---
