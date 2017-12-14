@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "it" }}">
+  {% include franci_head.html %}
+  <body>
+    {% include franci_page_title.html %}
+    <div class="page-content" aria-label="Content">
+      <div class="wrapper">
+          {% include franci_menu_pagine.html %}
+          {{ content }}
+      </div>
+    </div>
+    {% include franci_footer.html %}
+  </body>
+</html>

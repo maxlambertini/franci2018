@@ -1,19 +1,8 @@
 ---
-layout: default
+layout: franci_default
 ---
 <article class="post">
-
-  <header class="post-header">
-    {% if page.title %}
-    <h1 class="post-title">{{ page.title | escape }}</h1>
-    {% endif %}
-    {% if page.main_title %}
-    <h1 class="post-title">{{ page.main_title | escape }}</h1>
-    {% endif %}
-  </header>
-
   <div class="post-content">
     {{ content }}
   </div>
-
 </article>
