@@ -5,7 +5,7 @@ layout: franci_default
   <div class="post-content">
     {% if page.image %}
     <figure class="page-logo">
-      <img src="{{ page.image }}" alt="{{ page.title }}" />
+      <img src="{{ page.image | relative_url}}" alt="{{ page.title }}" />
       {% if page.quadro %}
       <figcaption>{{ page.quadro }}</figcaption>
       {% endif %}
