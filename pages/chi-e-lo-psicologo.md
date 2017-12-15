@@ -1,4 +1,5 @@
 ---
+inner: 1
 layout: page
 title: Chi è lo Psicologo ?
 permalink: /chi-e-lo-psicologo/

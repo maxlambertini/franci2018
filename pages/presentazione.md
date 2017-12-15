@@ -3,6 +3,7 @@ layout: page
 title: Presentazione
 permalink: /presentazione/
 order: 1
+inner: 1
 ---
 
 <figure class="presentazione">

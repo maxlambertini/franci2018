@@ -3,6 +3,7 @@ layout: page
 title: Mediazione Familiare e Gestione dei Conflitti
 permalink: /mediazione-familiare/
 order: 6
+inner: 1
 ---
 
 ### Per trovare un nuovo modo di "essere famiglia"

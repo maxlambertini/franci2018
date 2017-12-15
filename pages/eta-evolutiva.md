@@ -6,6 +6,7 @@ image: /pics/eta-evolutiva.jpg
 herobg: eta-evolutiva
 quadro: Gino Covili, 'La favola', (1999)
 order: 4
+inner: 1
 ---
 
 

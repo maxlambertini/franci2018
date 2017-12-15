@@ -3,6 +3,7 @@ layout: page
 title: Il Training Autogeno
 permalink: /training-autogeno/
 order: 9
+inner: 1
 --- 
 
 ## Salute non é solo assenza di malattia, ma uno stato generale di benessere, psichico e fisico

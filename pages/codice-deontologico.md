@@ -3,6 +3,7 @@ layout: page
 title: Il Codice Deontologico degli Psicologi Italiani
 permalink: /codice-deontologico/
 order: 15
+inner: 1
 ---
  
 ## Capo I - Principi generali
