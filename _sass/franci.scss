@@ -1,8 +1,16 @@
+$bg: #369;
+$bg1: lighten($bg,55);
+$bgd: lighten($bg,5);
+
 BODY, P, DIV, UL LI, OL LI, TH, TH {
-    font-family: "Constantia", Georgia, 'Times New Roman', Times, serif;
+    font-family: "Sahitya", "Constantia", Georgia, 'Times New Roman', Times, serif;
     font-size: 14pt;
     margin: 0px;
 }
+
+H1,H2,H3 { font-family: "Playball","Constantia", Georgia, 'Times New Roman', Times, serif;}
+
+A { color: $bg; font-weight: bold;}
 
 P {
     margin-bottom: 0.5em;
@@ -17,10 +25,15 @@ HEADER {
     text-align: center;
     H1, H2 {
         text-shadow: 0px 2px 20px  #000;
-        font-weight: bold;
+        /*font-weight: bold;*/
         text-align: center;
     }
+    
 }
+.foo-item {
+    margin-bottom:1.5em;
+}
+
 
 FOOTER {
     width:98%;
@@ -28,6 +41,12 @@ FOOTER {
     background-color: #369;
     color: white;
     margin-top: 1.5em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    H3 {
+        font-size: 1.35em;
+        font-weight: bold;
+    }
+    A { color: lighten($bg,45); text-decoration: none; font-weight: bold; }
 }
 
 
@@ -36,13 +55,13 @@ FOOTER {
     padding-bottom: 1em;
     H1.hero-title {
         font-size: 48pt;
-        font-weight: bold;
         text-align: center;
+        margin: auto 2%;
     }
     H2.hero-row {
         font-size: 24pt;
-        font-weight: bold;
         text-align: center;
+        margin: auto 2%;
     }
 }
 
@@ -66,6 +85,19 @@ FOOTER {
             width: 100%;
         }
     }
+    H1 {
+        font-size: 2;
+        color: $bgd;
+    }
+    H2 {
+        font-size: 1.75em;
+        color: $bgd;
+    }
+    H3 {
+        font-size: 1.4em;
+        color: $bgd;
+    }
+
 }
 
 
@@ -79,13 +111,37 @@ FOOTER {
         padding-top: 0.2em;
         padding-bottom: 0.2em;
         text-align: center;
+        font-size: 0.9em;
         A { text-decoration: none; }            
     }
     .selected {
-        background-color: darken(#369,20);
-        A {
-            color:white;
-        }
+        background-color: $bg1;
     }
 
   }
+
+  @media only screen and (max-width: 767px) {
+    .post-content {
+        figure {
+            padding:0px;
+            width: 90%;
+            max-width: 90%;
+            margin-left:5%;
+            text-align: center;
+            IMG {
+                max-width: 100%;
+            }
+            figcaption {
+                font-size: 0.85em;
+                font-style: italic;
+                text-align: center;
+            }
+        }
+        figure.page-logo {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
