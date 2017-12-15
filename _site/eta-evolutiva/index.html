@@ -6,14 +6,40 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Età Evolutiva</title>
 <meta name="description" content="Dottoressa Francesca De Lucca, Psicologo Psicoterapeuta in Reggio Emilia e Provincia, Bologna e Provincia.">
+<link rel="stylesheet" href="/libs/leaflet/dist/leaflet.css" />
+<link rel="stylesheet" href="/libs/skeleton/css/normalize.css" />
+<link rel="stylesheet" href="/libs/skeleton/css/skeleton.css" />
+<script src="libs/leaflet/dist/leaflet.js"></script>
+<script type="application/ld+json">
+        {
+          "@context": "http://schema.org/",
+          "@type": "LocalBusiness",
+          "name": "Francesca De Lucca",
+          "jobTitle": "Psicologo Psicoterapeuta",
+          "description" : "Francesca De Lucca, Psicologo e Psicoterapeuta specializzata in analisi immaginativa in Bibbiano, Val d'Enza (RE), Reggio Emilia, Cavriago, Quattro Castella, Montecchio Emilia, Traversetolo, Montechiarugolo",
+          "telephone": "+39 3403946998",
+          "url": "http://psicoterapeutavaldenza.it",
+              "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "44.66416",
+            "longitude": "10.47328"
+                 }
+        }		
+</script>		
+<script type="text/javascript" src="./lib/custom/code.js"></script>		
+<!--
+<link href='https://fonts.googleapis.com/css?family=Sahitya:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>  
+-->
 <link rel="stylesheet" href="/sass/main.css">
+
 <link rel="canonical" href="http://localhost:4000/eta-evolutiva/">
 
-</head>
+</head>  
 
   <body>
         
-<header id="header" class="post-header ">
+<header id="header" class="post-header    eta-evolutiva">
     
     <h1 class="post-title">Età Evolutiva</h1>
     
@@ -22,10 +48,11 @@
 
 
     <div class="page-content" aria-label="Content">
-      <div class="wrapper">
+      <div class="container">
+          <div class="row">
           
 
-<nav id="elenco_pagine">
+<div class="three columns" id="elenco_pagine">
     <ul class="elenco">
         
         <li id="goto-home"><a class="site-title" href="/">Pagina Iniziale</a></li>
@@ -71,12 +98,6 @@
         
         
                             
-        <li class="no-selected"><a class="page-link" href="/codice-deontologico/">Il Codice Deontologico degli Psicologi Italiani</a></li>
-        
-        
-        
-        
-                            
         <li class="no-selected"><a class="page-link" href="/mediazione-familiare/">Mediazione Familiare e Gestione dei Conflitti</a></li>
         
         
@@ -85,10 +106,22 @@
                             
         <li class="no-selected"><a class="page-link" href="/training-autogeno/">Il Training Autogeno</a></li>
         
+        
+        
+        
+                            
+        <li class="no-selected"><a class="page-link" href="/codice-deontologico/">Il Codice Deontologico degli Psicologi Italiani</a></li>
+        
+        
+        
+        
+                            
+        <li class="no-selected"><a class="page-link" href="/contatti/">Contatti</a></li>
+        
                 
     </ul>
-</nav>
-          <article class="post">
+</div>
+          <div class="nine columns" class="post">
   <div class="post-content">
     
     <figure class="page-logo">
@@ -129,8 +162,9 @@
 </blockquote>
 
   </div>
-</article>
+</div>
 
+          </div>
       </div>
     </div>
     <footer id="footer" class="site-footer">

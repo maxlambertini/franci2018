@@ -5,6 +5,7 @@ permalink: /chi-e-lo-psicologo/
 order: 2
 quadro: Gino Covili - Il Seminatore (1998)
 image: /pics/chi-e-lo.psicologo.jpg
+herobg: chi-e-lo-psicologo
 ---
 
 Psichiatra, Neurologo, Psicologo, Psicoterapeuta, Specialista in Malattie Mentali, ecc.. discriminare fra le varie professionalità non è semplice. 

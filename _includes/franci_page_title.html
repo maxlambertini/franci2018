@@ -1,12 +1,12 @@
 {% if page.hero_title %}
-<header id="hero" class="post-header {{ page.headerclass }}">
+<header id="hero" class="post-header {{ page.headerclass }}  {{ page.herobg }}">
         <h1 class="hero-title">{{ page.hero_title | escape }}</h1>
         {% if page.hero_row %}
         <h2 class="hero-row">{{ page.hero_row }}</h2>
         {% endif %}
 </header>
 {% else %}    
-<header id="header" class="post-header {{ page.headerclass }}">
+<header id="header" class="post-header {{ page.headerclass }}   {{ page.herobg }}">
     {% if page.title %}
     <h1 class="post-title">{{ page.title | escape }}</h1>
     {% endif %}

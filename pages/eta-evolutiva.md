@@ -3,6 +3,7 @@ layout: page
 title: Età Evolutiva
 permalink: /eta-evolutiva/
 image: /pics/eta-evolutiva.jpg
+herobg: eta-evolutiva
 quadro: Gino Covili, 'La favola', (1999)
 order: 4
 ---
