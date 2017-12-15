@@ -13,7 +13,8 @@
                 {% assign liclass="selected" %}
             {% else %}
                 {% assign liclass="no-selected" %}
-            {% endif %}                
+            {% endif %}
+            <!-- inner: {{ my_page.inner }} -->                
             {% if my_page.inner == 1 %}
             <li class="{{ liclass }}"><a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
             {% endif %}
