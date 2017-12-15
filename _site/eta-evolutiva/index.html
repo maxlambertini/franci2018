@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="/libs/leaflet/dist/leaflet.css" />
 <link rel="stylesheet" href="/libs/skeleton/css/normalize.css" />
 <link rel="stylesheet" href="/libs/skeleton/css/skeleton.css" />
-<script src="libs/leaflet/dist/leaflet.js"></script>
+<script src="/libs/leaflet/dist/leaflet.js"></script>
 <script type="application/ld+json">
         {
           "@context": "http://schema.org/",
@@ -26,12 +26,13 @@
                  }
         }		
 </script>		
-<script type="text/javascript" src="./lib/custom/code.js"></script>		
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<!-- <script type="text/javascript" src="./lib/custom/code.js"></script>		 -->
 <link href='https://fonts.googleapis.com/css?family=Sahitya:400,700' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>  
 <link rel="stylesheet" href="/sass/main.css">
 
-<link rel="canonical" href="/eta-evolutiva/">
+<link rel="canonical" href="http://localhost:4000/eta-evolutiva/">
 
 </head>  
 
@@ -51,7 +52,7 @@
           
 
 <div class="three columns" id="elenco_pagine">
-    <ul class="elenco">
+    <ul class="elenco" id="elenco">
         
         <li id="goto-home"><a class="site-title" href="/">Pagina Iniziale</a></li>
         
@@ -152,6 +153,7 @@
         
                 
     </ul>
+    <div style="width: 100%;height:2px;"></div>
 </div>
           <div class="nine columns" class="post">
   <div class="post-content">
@@ -247,5 +249,34 @@
     </div>
 </footer>
 
+
+    <script type="text/javascript">
+    $(function() {
+
+        var $footer = $("#footer");
+        var footer_s = $footer.offset().top;
+        var $sidebar   = $("#elenco"); 
+        console.log (footer_s)
+        var $window    = $(window),
+            offset     = $sidebar.offset(),
+            h = $sidebar.height(),
+            topPadding = 25;
+
+
+        $window.scroll(function() {
+            if ($window.scrollTop() > offset.top) {
+
+                $sidebar.stop().animate({
+                    marginTop: $window.scrollTop() - offset.top + topPadding
+                });
+            } else {
+                $sidebar.stop().animate({
+                    marginTop: 0
+                });
+            }
+        });
+        
+    });    
+    </script>
   </body>
 </html>

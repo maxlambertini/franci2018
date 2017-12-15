@@ -1,7 +1,7 @@
 {% assign default_paths = site.pages | sort: "order" | map: "path" %}
 {% assign page_paths = site.header_pages | default: default_paths %}
 <div class="three columns" id="elenco_pagine">
-    <ul class="elenco">
+    <ul class="elenco" id="elenco">
         {% if page.inner ==1 %}
         <li id="goto-home"><a class="site-title" href="{{ "/" | relative_url }}">Pagina Iniziale</a></li>
         {% endif %}
@@ -21,4 +21,5 @@
         {% endif %}
         {% endfor %}        
     </ul>
+    <div style="width: 100%;height:2px;"></div>
 </div>

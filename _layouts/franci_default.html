@@ -12,5 +12,34 @@
       </div>
     </div>
     {% include franci_footer.html %}
+
+    <script type="text/javascript">
+    $(function() {
+
+        var $footer = $("#footer");
+        var footer_s = $footer.offset().top;
+        var $sidebar   = $("#elenco"); 
+        console.log (footer_s)
+        var $window    = $(window),
+            offset     = $sidebar.offset(),
+            h = $sidebar.height(),
+            topPadding = 25;
+
+
+        $window.scroll(function() {
+            if ($window.scrollTop() > offset.top) {
+
+                $sidebar.stop().animate({
+                    marginTop: $window.scrollTop() - offset.top + topPadding
+                });
+            } else {
+                $sidebar.stop().animate({
+                    marginTop: 0
+                });
+            }
+        });
+        
+    });    
+    </script>
   </body>
 </html>

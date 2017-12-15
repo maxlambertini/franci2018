@@ -6,6 +6,7 @@ BODY, P, DIV, UL LI, OL LI, TH, TH {
     font-family: "Sahitya", "Constantia", Georgia, 'Times New Roman', Times, serif;
     font-size: 14pt;
     margin: 0px;
+    position: relative;
 }
 
 H1,H2,H3 { font-family: "Playball","Constantia", Georgia, 'Times New Roman', Times, serif;}
@@ -119,6 +120,17 @@ FOOTER {
         background-color: $bg1;
     }
 
+  }
+
+  @media only screen and (min-width: 767px) {
+    #elenco {
+        position: absolute;
+        background-color:white;
+        box-shadow: 0px 2px 10px white;
+    }
+    #elenco-pagine {
+        position:relative;
+    }
   }
 
   @media only screen and (max-width: 767px) {
