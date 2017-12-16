@@ -53,6 +53,8 @@
 
 <div class="three columns" id="elenco_pagine">
     <ul class="elenco" id="elenco">
+        <li class="li-menu-gohome" id="menu-home"><img src="/pics/menu.png" /></li>
+        <!-- button -->
         
                 
         
@@ -83,7 +85,7 @@
             
             <!-- inner: 1 -->                
             
-            <li class="no-selected"><a class="page-link" href="/presentazione/">Presentazione</a></li>
+            <li class="li-menu-item no-selected"><a class="page-link" href="/presentazione/">Presentazione</a></li>
             
         
         
@@ -92,7 +94,7 @@
             
             <!-- inner: 1 -->                
             
-            <li class="no-selected"><a class="page-link" href="/chi-e-lo-psicologo/">Chi è lo Psicologo ?</a></li>
+            <li class="li-menu-item no-selected"><a class="page-link" href="/chi-e-lo-psicologo/">Chi è lo Psicologo ?</a></li>
             
         
         
@@ -101,7 +103,7 @@
             
             <!-- inner: 1 -->                
             
-            <li class="no-selected"><a class="page-link" href="/come-funziona/">Come funziona la Psicoterapia</a></li>
+            <li class="li-menu-item no-selected"><a class="page-link" href="/come-funziona/">Come funziona la Psicoterapia</a></li>
             
         
         
@@ -110,7 +112,7 @@
             
             <!-- inner: 1 -->                
             
-            <li class="no-selected"><a class="page-link" href="/eta-evolutiva/">Età Evolutiva</a></li>
+            <li class="li-menu-item no-selected"><a class="page-link" href="/eta-evolutiva/">Età Evolutiva</a></li>
             
         
         
@@ -119,7 +121,7 @@
             
             <!-- inner: 1 -->                
             
-            <li class="no-selected"><a class="page-link" href="/mediazione-familiare/">Mediazione Familiare e Gestione dei Conflitti</a></li>
+            <li class="li-menu-item no-selected"><a class="page-link" href="/mediazione-familiare/">Mediazione Familiare e Gestione dei Conflitti</a></li>
             
         
         
@@ -128,7 +130,7 @@
             
             <!-- inner: 1 -->                
             
-            <li class="no-selected"><a class="page-link" href="/training-autogeno/">Il Training Autogeno</a></li>
+            <li class="li-menu-item no-selected"><a class="page-link" href="/training-autogeno/">Il Training Autogeno</a></li>
             
         
         
@@ -137,7 +139,7 @@
             
             <!-- inner: 1 -->                
             
-            <li class="no-selected"><a class="page-link" href="/codice-deontologico/">Il Codice Deontologico degli Psicologi Italiani</a></li>
+            <li class="li-menu-item no-selected"><a class="page-link" href="/codice-deontologico/">Il Codice Deontologico degli Psicologi Italiani</a></li>
             
         
         
@@ -146,7 +148,7 @@
             
             <!-- inner: 1 -->                
             
-            <li class="no-selected"><a class="page-link" href="/contatti/">Contatti</a></li>
+            <li class="li-menu-item no-selected"><a class="page-link" href="/contatti/">Contatti</a></li>
             
         
                 
@@ -156,12 +158,12 @@
           <div class="nine columns" class="post">
   <div class="post-content">
     
-    <figure class="page-logo">
+    <div class="page-logo">
       <img src="/pics/benvenuti.jpg" alt="Benvenuti!" />
       
-      <figcaption>Gino Covili, 'La cena', 1999</figcaption>
+      <div class="logo-caption">Gino Covili, 'La cena', 1999</div>
       
-    </figure>
+    </div>
     
     <h1 id="benvenuti">Benvenuti!</h1>
 
@@ -233,30 +235,37 @@ dott.ssa Francesca De Lucca</p>
 
     <script type="text/javascript">
     $(function() {
+        $("#menu-home").click (function() {
+            $(".li-menu-item").toggle();
+        })
+    })
+
+    $(function() {
 
         var $footer = $("#footer");
         var footer_s = $footer.offset().top;
         var $sidebar   = $("#elenco"); 
-        console.log (footer_s)
-        var $window    = $(window),
-            offset     = $sidebar.offset(),
-            h = $sidebar.height(),
-            topPadding = 25;
+        if ($sidebar.css('position') == "relative") {
+            console.log (footer_s)
+            var $window    = $(window),
+                offset     = $sidebar.offset(),
+                h = $sidebar.height(),
+                topPadding = 25;
 
 
-        $window.scroll(function() {
-            if ($window.scrollTop() > offset.top) {
+            $window.scroll(function() {
+                if ($window.scrollTop() > offset.top) {
 
-                $sidebar.stop().animate({
-                    marginTop: $window.scrollTop() - offset.top + topPadding
-                });
-            } else {
-                $sidebar.stop().animate({
-                    marginTop: 0
-                });
-            }
-        });
-        
+                    $sidebar.stop().animate({
+                        marginTop: $window.scrollTop() - offset.top + topPadding
+                    });
+                } else {
+                    $sidebar.stop().animate({
+                        marginTop: 0
+                    });
+                }
+            });
+        }
     });    
     </script>
   </body>

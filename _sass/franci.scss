@@ -2,12 +2,15 @@ $bg: #369;
 $bg1: lighten($bg,55);
 $bgd: lighten($bg,5);
 
-BODY, P, DIV, UL LI, OL LI, TH, TH {
+BODY, P, DIV, UL LI, OL LI, TH, TD {
     font-family: "Sahitya", "Constantia", Georgia, 'Times New Roman', Times, serif;
     font-size: 14pt;
+}
+BODY {
     margin: 0px;
     position: relative;
 }
+
 
 H1,H2,H3 { font-family: "Playball","Constantia", Georgia, 'Times New Roman', Times, serif;}
 
@@ -67,6 +70,20 @@ FOOTER {
 }
 
 .post-content {
+    .page-logo { max-width: 55%; 
+        float: right;
+          margin-left: 1em;
+          margin-bottom:1.5em;
+          margin-top: 1em;
+          IMG {
+            max-width: 100%;
+          }
+          .logo-caption {
+            font-size: 0.9em;
+            font-style:italic;
+            text-align:center;
+          }    
+    }
     figure {
         float:right;
         padding:0px;
@@ -98,7 +115,10 @@ FOOTER {
         font-size: 1.4em;
         color: $bgd;
     }
-
+    P {
+        text-align: justify;
+        hyphens: auto;
+    }
 }
 
 
@@ -124,7 +144,8 @@ FOOTER {
 
   @media only screen and (min-width: 767px) {
     #elenco {
-        position: absolute;
+        .li-menu-gohome { display: none;}
+        position: relative;
         background-color:white;
         box-shadow: 0px 2px 10px white;
     }
@@ -134,6 +155,42 @@ FOOTER {
   }
 
   @media only screen and (max-width: 767px) {
+    .elenco {
+        position:fixed; 
+        width:100%;
+        float:left;
+        left: 0;
+        top: 0;
+        min-height: 50px;
+        background-color: $bgd;
+        margin-top:0px;
+        z-index: 9999;
+        box-shadow: 0px 2px 10px black;
+        LI { border-bottom: 0px solid $bg;}
+        LI.li-menu-gohome {
+            height: 32px;
+            background-color: yellow;
+            margin-top:8px;
+            margin-left:8px;
+            width: 32px;
+            float: left;
+            display:block;
+            background-color: $bgd;
+            border-bottom: 0px solid $bg;
+        }
+        LI.li-menu-item {
+            display:none;
+            float:right;
+            margin-right:1%;
+            width: 78%;
+            A { color: white;}
+            background-color: $bgd;
+            border-bottom: 0px solid $bg;
+        }
+    }
+    HEADER {
+        margin-top:56px;
+    } 
     .post-content {
         figure {
             padding:0px;

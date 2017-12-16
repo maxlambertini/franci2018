@@ -15,30 +15,37 @@
 
     <script type="text/javascript">
     $(function() {
+        $("#menu-home").click (function() {
+            $(".li-menu-item").toggle();
+        })
+    })
+
+    $(function() {
 
         var $footer = $("#footer");
         var footer_s = $footer.offset().top;
         var $sidebar   = $("#elenco"); 
-        console.log (footer_s)
-        var $window    = $(window),
-            offset     = $sidebar.offset(),
-            h = $sidebar.height(),
-            topPadding = 25;
+        if ($sidebar.css('position') == "relative") {
+            console.log (footer_s)
+            var $window    = $(window),
+                offset     = $sidebar.offset(),
+                h = $sidebar.height(),
+                topPadding = 25;
 
 
-        $window.scroll(function() {
-            if ($window.scrollTop() > offset.top) {
+            $window.scroll(function() {
+                if ($window.scrollTop() > offset.top) {
 
-                $sidebar.stop().animate({
-                    marginTop: $window.scrollTop() - offset.top + topPadding
-                });
-            } else {
-                $sidebar.stop().animate({
-                    marginTop: 0
-                });
-            }
-        });
-        
+                    $sidebar.stop().animate({
+                        marginTop: $window.scrollTop() - offset.top + topPadding
+                    });
+                } else {
+                    $sidebar.stop().animate({
+                        marginTop: 0
+                    });
+                }
+            });
+        }
     });    
     </script>
   </body>

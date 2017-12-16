@@ -4,12 +4,12 @@ layout: franci_default
 <div class="nine columns" class="post">
   <div class="post-content">
     {% if page.image %}
-    <figure class="page-logo">
+    <div class="page-logo">
       <img src="{{ page.image | relative_url}}" alt="{{ page.title }}" />
       {% if page.quadro %}
-      <figcaption>{{ page.quadro }}</figcaption>
+      <div class="logo-caption">{{ page.quadro }}</div>
       {% endif %}
-    </figure>
+    </div>
     {% endif %}
     {{ content }}
   </div>

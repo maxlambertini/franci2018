@@ -6,6 +6,7 @@ image: /pics/benvenuti.jpg
 headerclass: index
 hero_title: Francesca De Lucca
 hero_row: Psicologa e Psicoterapeuta in Reggio Emilia e Bologna
+title:
 
 ---
 

@@ -2,8 +2,10 @@
 {% assign page_paths = site.header_pages | default: default_paths %}
 <div class="three columns" id="elenco_pagine">
     <ul class="elenco" id="elenco">
+        <li class="li-menu-gohome" id="menu-home"><img src="{{ "/" | relative_url }}pics/menu.png" /></li>
+        <!-- button -->
         {% if page.inner ==1 %}
-        <li id="goto-home"><a class="site-title" href="{{ "/" | relative_url }}">Pagina Iniziale</a></li>
+        <li class="li-menu-item" id="goto-home"><a class="site-title" href="{{ "/" | relative_url }}">Pagina Iniziale</a></li>
         {% endif %}
                 
         {% for path in page_paths %}
@@ -16,7 +18,7 @@
             {% endif %}
             <!-- inner: {{ my_page.inner }} -->                
             {% if my_page.inner == 1 %}
-            <li class="{{ liclass }}"><a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
+            <li class="li-menu-item {{ liclass }}"><a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
             {% endif %}
         {% endif %}
         {% endfor %}        
