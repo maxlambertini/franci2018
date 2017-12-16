@@ -192,13 +192,25 @@ FOOTER {
         margin-top:56px;
     } 
     .post-content {
+        .page-logo { max-width: 90%; 
+            margin: 1em auto;
+            float:none;
+              IMG {
+                max-width: 100%;
+              }
+              .logo-caption {
+                font-size: 0.9em;
+                font-style:italic;
+                text-align:center;
+              }    
+        }
         figure {
             padding:0px;
             width: 90%;
             max-width: 90%;
             margin-left:5%;
             text-align: center;
-            IMG {
+            IMG { 
                 max-width: 100%;
             }
             figcaption {
