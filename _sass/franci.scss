@@ -118,6 +118,9 @@ FOOTER {
     P {
         text-align: justify;
         hyphens: auto;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-behavior: auto;
     }
 }
 
@@ -168,11 +171,11 @@ FOOTER {
         box-shadow: 0px 2px 10px black;
         LI { border-bottom: 0px solid $bg;}
         LI.li-menu-gohome {
-            height: 32px;
+            height: 24px;
             background-color: yellow;
             margin-top:8px;
             margin-left:8px;
-            width: 32px;
+            width: 24px;
             float: left;
             display:block;
             background-color: $bgd;
@@ -181,15 +184,23 @@ FOOTER {
         LI.li-menu-item {
             display:none;
             float:right;
+            text-align: left;
             margin-right:1%;
             width: 78%;
             A { color: white;}
             background-color: $bgd;
             border-bottom: 0px solid $bg;
+            margin-bottom:0px;
+            margin-top:0px;
+            font-family: 'Segoe UI', 'Droid Sans', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        LI.selected {
+            background-color: $bg1;
+            A { color: darken($bg,10);}
         }
     }
     HEADER {
-        margin-top:56px;
+        margin-top:53px;
     } 
     .post-content {
         .page-logo { max-width: 90%; 
