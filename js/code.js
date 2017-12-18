@@ -44,12 +44,12 @@ function initmap2() {
 	var osm = new L.TileLayer(osmUrl, {minZoom: 9, maxZoom: 19, attribution: osmAttrib});		
 
 	// start the map in South-East England
-	map.setView(new L.LatLng(44.4777258,11.2749066),16);
+	map.setView(new L.LatLng(44.4777258,11.276001),16);
 	map.addLayer(osm);
 
 	//add popup
 	var popup = L.popup()
-		.setLatLng([44.4777258,11.2749066])
+		.setLatLng([44.4777258,11.276001])
 		.setContent("<div class='popx'><b>Dott.ssa Francesca de Lucca</b><br>Tel. +393403946998</div>")
 		.openOn(map);
 }
