@@ -27,11 +27,15 @@ function initmap() {
 	map.setView(new L.LatLng(44.66416, 10.47328),16);
 	map.addLayer(osm);
 
-	//add popup
+    //add popup
+    L.marker([44.66416, 10.47328]).addTo(map)
+    .bindPopup("<div class='popx'><b>Dott.ssa Francesca<br>De Lucca</b><br>Tel. +393403946998</div>");
+/*
 	var popup = L.popup()
 		.setLatLng([44.66416, 10.47328])
 		.setContent("<div class='popx'><b>Dott.ssa Francesca de Lucca</b><br>Tel. +393403946998</div>")
-		.openOn(map);
+        .openOn(map);
+    */
 }
 
 function initmap2() {
@@ -47,10 +51,8 @@ function initmap2() {
 	map.setView(new L.LatLng(44.47793,11.27710),16);
 	map.addLayer(osm);
 
-	//add popup
-	var popup = L.popup()
-		.setLatLng([44.47793,11.27710])
-		.setContent("<div class='popx'><b>Dott.ssa Francesca de Lucca</b><br>Tel. +393403946998</div>")
-		.openOn(map);
+    //add marker
+    L.marker([44.47793,11.27710]).addTo(map)
+        .bindPopup("<div class='popx'><b>Dott.ssa Francesca<br />De Lucca</b><br>Tel. +393403946998</div>");
 }
 
