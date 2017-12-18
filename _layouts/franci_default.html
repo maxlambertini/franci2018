@@ -46,7 +46,15 @@
                 }
             });
         }
-    });    
+    });   
+    
+    {% if page.usemap %}
+    $(function() {
+        initmap();
+        initmap2();
+    })
+    {% endif %}
+
     </script>
   </body>
 </html>

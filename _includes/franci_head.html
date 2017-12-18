@@ -7,6 +7,8 @@
 <link rel="stylesheet" href="/libs/leaflet/dist/leaflet.css" />
 <link rel="stylesheet" href="/libs/skeleton/css/normalize.css" />
 <link rel="stylesheet" href="/libs/skeleton/css/skeleton.css" />
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+{% if page.usemap %}
 <script src="/libs/leaflet/dist/leaflet.js"></script>
 <script type="application/ld+json">
         {
@@ -24,8 +26,8 @@
                  }
         }		
 </script>		
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-<!-- <script type="text/javascript" src="./lib/custom/code.js"></script>		 -->
+<script type="text/javascript" src="/js/code.js"></script>
+{% endif %}		 
 <link href='https://fonts.googleapis.com/css?family=Sahitya:400,700' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>  
 <link rel="stylesheet" href="{{ "/sass/main.css" | relative_url }}">
